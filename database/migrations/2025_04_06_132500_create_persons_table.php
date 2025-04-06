@@ -20,7 +20,7 @@ return new class extends Migration
             $table->bigInteger('phone_number')->nullable();
             $table->text('direction')->nullable();
             $table->text('coordinates')->nullable();
-            $table->string('url_picture', 200)->nullable();
+            $table->string('url_picture', 128)->nullable();
         });
     }
 

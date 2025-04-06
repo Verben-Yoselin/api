@@ -9,6 +9,10 @@ class Client extends Model
 {
     use HasFactory;
 
+    public $timestamps = false;
+
+    public $table = 'clients';
+
     protected $fillable = [
         'id',
         'join_date_time',

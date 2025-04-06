@@ -9,6 +9,10 @@ class Order extends Model
 {
     use HasFactory;
 
+    public $timestamps = false;
+
+    public $table = 'orders';
+
     protected $fillable = [
         'date_time',
         'client_id',

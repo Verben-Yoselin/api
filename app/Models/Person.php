@@ -9,6 +9,10 @@ class Person extends Model
 {
     use HasFactory;
 
+    public $timestamps = false;
+
+    public $table = 'persons';
+
     protected $fillable = [
         'name',
         'pat_surname',
